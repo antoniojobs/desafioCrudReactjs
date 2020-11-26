@@ -1,8 +1,17 @@
-import React from 'react';
-
+import React,{useState} from 'react';
+import Header from './Header';
 function App() {
+  const [contador,setCounter] = useState(0) ;
+
+  function increment() {
+    setCounter(contador+1);
+  }
   return (
-      <h1>Hi galaxy</h1>
+    <div>
+      <Header>Contador: {contador}</Header>
+      <button onClick={increment}>Incrementar</button>
+    </div>
+        
   );
 }
 
