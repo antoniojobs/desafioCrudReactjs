@@ -50,3 +50,9 @@
 .svg{
     margin-right: 8px;
 }
+
+.img{
+    border: solid 1px red;
+    border-radius: 15px;
+    max-width: 50%;
+}

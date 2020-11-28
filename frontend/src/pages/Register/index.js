@@ -1,13 +1,13 @@
 import React from 'react';
 import {FiLogIn,FiArrowDownCircle} from 'react-icons/fi';
-import './styles.css';
-import recruImg from '../../assets/recruiters.png';
+// import './styles.css';
+// import recruImg from '../../assets/recruiters.png';
 
-export default function Logon() {
+export default function Register() {
     return(
         <div className="logon-container">
             <section className="form">
-                <FiArrowDownCircle size={100} color="#ec0e0e" />
+                <FiArrowDownCircle size={100} color="#1122c1cc" />
                     <form>
                         <h1>Logue-se aqui</h1>
                         <input placeholder="email" required/>
@@ -20,7 +20,7 @@ export default function Logon() {
                         </a>
                     </form>
                 </section>
-                <img className="img"  src={recruImg}alt='recrutadores'/>
+                {/* <img className="img"  src={recruImg}alt='recrutadores'/> */}
         </div>
     );
 }
