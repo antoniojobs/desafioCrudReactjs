@@ -5,10 +5,11 @@ import Register from './pages/Register/index';
 
 export default function Routes(){
     return(
-        <BrowserRouter>
+        // <BrowserRouter>
             <Switch>
-                    {<Route path="/"componet={Logon}/>}
+                <Route path="/" component ={Logon}exact />
+                <Route path="/cadastro" component ={Register} />
             </Switch>
-        </BrowserRouter>
+        // </BrowserRouter>
     );
 }

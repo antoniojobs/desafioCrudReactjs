@@ -1,6 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {FiLogIn,FiArrowDownCircle} from 'react-icons/fi';
-// import './styles.css';
+import './styles.css';
 // import recruImg from '../../assets/recruiters.png';
 
 export default function Register() {
@@ -9,18 +10,17 @@ export default function Register() {
             <section className="form">
                 <FiArrowDownCircle size={100} color="#1122c1cc" />
                     <form>
-                        <h1>Logue-se aqui</h1>
+                        <h1>Cadastre-se aqui</h1>
                         <input placeholder="email" required/>
                         <input placeholder="senha" required/>
                         
-                        <button className="button" type="submit">Entrar</button>
-                        <a className="a" href="/register">
+                        <button className="buttoncad" type="submit">Entrar</button>
+                        <Link className="a" to="/">
                             <FiLogIn className="svg" size={16} color="#ec0e0e" />
-                            Não tenho cadastro
-                        </a>
+                            Voltar para home
+                        </Link>
                     </form>
                 </section>
-                {/* <img className="img"  src={recruImg}alt='recrutadores'/> */}
         </div>
     );
 }
