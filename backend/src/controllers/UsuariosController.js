@@ -12,14 +12,14 @@ module.exports = {
         const { nome, telefone, email, cidade, uf } = request.body;
         const id = crypto.randomBytes(4).toString('HEX');
         console.log(request.body);
-        /*  await connection('usuarios').insert({
+         await connection('usuarios').insert({
              id,
              nome,
              telefone,
              email,
              cidade,
              uf
-         }) */
+         })
 
         return response.json({ id });
     },
