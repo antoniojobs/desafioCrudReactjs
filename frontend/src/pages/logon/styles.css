@@ -23,7 +23,7 @@
     font-size: 32px;
     margin-bottom: 32px;
   }
-  .logon-container section.form form> h1 a {
+/*   .logon-container section.form form> h1 a {
     display: flex;
     align-items: center;
     margin-top:40px;
@@ -31,7 +31,7 @@
     text-decoration: none;
     font-weight: bold;
     transition: opacity 0.2;  
-}
+} */
 .a{
     display: flex;
     align-items: center;
